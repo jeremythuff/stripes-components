@@ -37,11 +37,11 @@
     "moment": "^2.17.1",
     "moment-range": "^3.0.3",
     "react": "^15.3.2",
-    "react-overlays": "^0.6.12"
+    "react-overlays": "^0.6.12",
     "prop-types": "^15.5.8",
     "reactabular-sticky": "^8.6.0",
     "reactabular-table": "^8.8.0",
-    "reactabular-virtualized": "^8.7.1",
+    "reactabular-virtualized": "^8.7.1"
   },
   "peerDependencies": {
     "stripes-core": "^0.5.0"
