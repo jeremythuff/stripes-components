@@ -34,6 +34,7 @@ The following properties are supported:
 * `sortedClass` (string): override class for the default style applied to headers of sorted columns.
 * `isEmptyMessage` (string): Message to display when the supplied contentData array is empty.
 * `caption` (string or component): Fills in the `<caption>` element for the table. 
+* `onFetch` (func): callback for the application to request more data to feed the list.
 
 ## Formatter
 
