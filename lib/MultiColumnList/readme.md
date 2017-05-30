@@ -35,10 +35,14 @@ The following properties are supported:
 * `sortedClass` (string): override class for the default style applied to headers of sorted columns.
 * `isEmptyMessage` (string): Message to display when the supplied contentData array is empty.
 * `caption` (string or component): Fills in the `<caption>` element for the table. 
+<<<<<<< HEAD
 * `onFetch` (func) Callback for fetching more data
 * `infinite` (bool) Employs virtualization for performant rendering of large sets of data.
 * `onScroll` (func) Callback for scrolling of list body.
 * `rowFormatter` (func) function of shape `<name>({rowIndex, rowClass, rowData, cells, rowProps}){return <reactElement>}` that can be used to supply custom row layout. Forking [defaultRowFormatter](lib/MultiColumnList/defaultRowFormatter.js) is a good place to start if you need to use this.
+=======
+* `onFetch` (func): callback for the application to request more data to feed the list.
+>>>>>>> origin/InfiniteScroll
 
 ## Formatter
 
