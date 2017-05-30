@@ -6,6 +6,8 @@
 * `<TextField>` hides clear "&#10005;" when `readOnly` prop is true.
 * `<Datepicker>` changed 'format' prop to 'DateFormat' for better cooperation with redux-form `<Field>` component.
 * `<Datepicker>` hides clear and calendar controls, disables functionality when `readOnly` prop is true.
+* `<MultiColumnList>` now can employ virtualization of rows for displaying gigantic lists of data.
+
 
 ## [0.9.0](https://github.com/folio-org/stripes-components/tree/v0.9.0) (2017-05-22)
 [Full Changelog](https://github.com/folio-org/stripes-components/compare/v0.8.0...v0.9.0)
