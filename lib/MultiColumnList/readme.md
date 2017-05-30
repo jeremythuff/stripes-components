@@ -30,11 +30,15 @@ The following properties are supported:
 * `onRowClick` (function): callback function invoked when one of the lines in the table is clicked (typically to select a record for more detailed display).
 * `onHeaderClick` (func[event, headerMetadata]): callback function invoked when one of the cells in the header is clicked (typically to choose a sort-order). By default, headerMetadata includes the column's data name as well as its alias, in case a object is supplied to the columnMapping prop.
 * `columnMapping` (object) Maps rendered column labels to the data fields for the onHeaderClick prop. 
+* `columnWidths` (object) Set custom column widths - E.g. {email: '40%'}.
 * `selectedClass` (string): override class for the default style applied to selected rows.
 * `sortedClass` (string): override class for the default style applied to headers of sorted columns.
 * `isEmptyMessage` (string): Message to display when the supplied contentData array is empty.
 * `caption` (string or component): Fills in the `<caption>` element for the table. 
-* `onFetch` (func): callback for the application to request more data to feed the list.
+* `onFetch` (func) Callback for fetching more data
+* `infinite` (bool) Employs virtualization for performant rendering of large sets of data.
+* `onScroll` (func) Callback for scrolling of list body.
+* `rowFormatter` (func) function of shape `<name>({rowIndex, rowClass, rowData, cells, rowProps}){return <reactElement>}` that can be used to supply custom row layout. Forking [defaultRowFormatter](lib/MultiColumnList/defaultRowFormatter.js) is a good place to start if you need to use this.
 
 ## Formatter
 
